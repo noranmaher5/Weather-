@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Weather App</title>
+</head>
+<body>
+  <nav class="navbar px-5 py-5 bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo + Text -->
+      <div class="d-flex align-items-center gap-2">
+        <img src="images/logo@2x.png" alt="Logo" width="50" height="35" class="d-inline-block" />
+        <div class="d-flex flex-column justify-content-center">
+          <h5 class="mb-0 text-white fw-bold">Weather</h5>
+          <small class="text-white-50">tagline goes here</small>
+        </div>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="navbar-nav d-flex flex-row gap-4">
+        <li class="nav-item">
+          <a class="nav-link active text-info border border-info rounded-pill px-3" href="#">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">News</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Live cameras</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Photos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="overlay">
+      <div class="container text-white py-5">
+        <div class="search-box position-relative mx-auto">
+          <input
+            id="searchInput"
+            type="text"
+            class="form-control form-control-lg rounded-pill pe-5"
+            placeholder="Find your location..."
+          />
+          <button
+            id="searchBtn"
+            class="btn btn-info text-white position-absolute top-50 end-0 translate-middle-y me-2 px-4 rounded-pill"
+          >
+            Find
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container weather-container">
+    <div class="row g-4" id="weatherCards">
+        <div class="row g-4 d-flex align-items-stretch" id="weatherCards">
+
+      <!-- Weather cards will be injected here -->
+    </div>
+  </div>
+
+  </div>
+ <footer class=" text-white mt-5 pt-5 pb-3">
+  <div class="container text-center">
+    <div class="search-box position-relative mx-auto mb-4" style="max-width: 500px;">
+      <input
+        type="email"
+        class="form-control form-control-lg rounded-pill pe-5"
+        placeholder="Enter your email to subscribe..."
+      />
+      <button
+        class="btn btn-info text-white position-absolute top-50 end-0 translate-middle-y me-2 px-4 rounded-pill"
+      >
+        Subscribe
+      </button>
+    </div>
+    <p class="text-white-50 mb-0 small">
+      &copy; 2014 Company name. Designed by Themezy. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
